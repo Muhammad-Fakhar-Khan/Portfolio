@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h3>My Portfolio</h3>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm Muhammad Fakhar Khan, a web developer and WordPress developer with a passion for creating stunning websites and applications.</p>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="project" onclick="openModal('modal1')">
+                <h2>Railway Management System</h2>
+                <img width="500px" src="assets/images/project1.jpeg" alt="Project 1">
+                <p class="card-text">Efficiently manage Interactive interface for ticket bookings, train schedules, and passenger information with our user-friendly Railway Management System.</p>
+            </div>
+            <div class="project" onclick="openModal('modal2')">
+                <h2>Car Selling System</h2>
+                <img width="500px" src="assets/images/project3.avif" alt="Project 2">
+                <p class="card-text">Revolutionize car sales with our streamlined Car Sale System. Simplify inventory management, enhance customer interactions, and boost sales efficiency with our user-friendly platform.</p>
+            </div>
+            <div class="project" onclick="openModal('modal3')">
+                <h2>Hotel Management System</h2>
+                <img width="500px" src="assets/images/project2.png" alt="Project 3">
+                <p class="card-text">Efficiently manage reservations, streamline operations, and enhance guest satisfaction with our Hotel Management System.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="skills" class="text-center">
+            <h2>SKILLS</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 ml-5">
+                        <div class="skill">
+                            <i class="fas fa-code"></i>
+                            <h4 class="skill-title" onclick="toggleSkillList('programming-languages')">Programming Languages</h4>
+                            <ul id="programming-languages" class="skill-list">
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 ml-5">
+                        <div class="skill">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4 class="skill-title" onclick="toggleSkillList('web-development')">Web Development</h4>
+                            <ul id="web-development" class="skill-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4 ml-5">
+                        <div class="skill">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4 class="skill-title" onclick="toggleSkillList('creative-marketing')">Creative & Marketing</h4>
+                            <ul id="creative-marketing" class="skill-list">
+                                <li>Digital Marketing</li>
+                                <li>Logo Designing</li>
+                                <li>SEO</li>
+                                <li>Blog writing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h1>Contact</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Railway Management System</h2>
+            <div class="modal-body">
+                <h6>Overview:</h6>
+                <p>A Java GUI-based Railway Management System for efficient ticket bookings, train scheduling, and passenger management.</p>
+                <h6>Features:</h6>
+                <ul>
+                    <li>User authentication and secure login system</li>
+                    <li>Interactive interface for booking, modifying, and canceling tickets</li>
+                    <li>Comprehensive train scheduling and route management</li>
+                    <li>Passenger information database management</li>
+                    <li>Integration with payment gateways for online transactions</li>
+                </ul>
+                <h6>Technologies Used:</h6>
+                <ul>
+                    <li>Java programming language</li>
+                    <li>Java Swing for GUI development</li>
+                    <li>MySQL database for data storage</li>
+                </ul>
+                <h6>Significance:</h6>
+                <p>The Railway Management System improves the efficiency and user experience of railway services by providing a user-friendly interface for managing various aspects of railway operations.</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Car Selling System</h2>
+            <div class="modal-body">
+                <h5>Overview:</h5>
+                <p>A Car Sale System designed to revolutionize car sales by simplifying inventory management, enhancing customer interactions, and boosting sales efficiency using HTML, CSS, JavaScript, PHP, and XAMPP.</p>
+                <h5>Features:</h5>
+                <ul>
+                    <li><strong>Inventory management:</strong> Efficiently manage car listings, including adding, updating, and removing cars.</li>
+                    <li><strong>Customer relationship management:</strong> Enhance customer interactions with detailed profiles and interaction history.</li>
+                    <li><strong>Sales tracking and analytics:</strong> Monitor sales performance with real-time reports and analytics.</li>
+                    <li><strong>Secure user authentication:</strong> Ensure that only authorized users can access the system.</li>
+                    <li><strong>Payment integration:</strong> Process transactions securely with integrated payment gateways.</li>
+                </ul>
+                <h5>Technologies Used:</h5>
+                <ul>
+                    <li><strong>HTML, CSS, and JavaScript:</strong> Core technologies for building the user interface and adding interactivity.</li>
+                    <li><strong>PHP:</strong> Server-side scripting for handling business logic.</li>
+                    <li><strong>XAMPP:</strong> Local server environment for development and testing.</li>
+                    <li><strong>MySQL:</strong> Database management for storing inventory and customer data.</li>
+                </ul>
+                <h5>Significance:</h5>
+                <p>The Car Sale System improves the efficiency and effectiveness of car sales operations by providing a comprehensive platform for managing inventory, customer relationships, and sales data. It enhances customer satisfaction and sales performance through its user-friendly interface and robust features.</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-body">
+                <h5>Overview:</h5>
+                <p>A Hotel Management System designed to efficiently manage reservations, streamline operations, and enhance guest satisfaction using HTML, CSS, JavaScript, and Bootstrap.</p>
+                <h5>Features:</h5>
+                <ul>
+                    <li><strong>User authentication and secure login system:</strong> Ensures that only authorized personnel can access the system.</li>
+                    <li><strong>Interactive interface for managing room bookings, modifications, and cancellations:</strong> Provides an intuitive interface for handling reservations.</li>
+                    <li><strong>Comprehensive room management:</strong> Manages room availability, assignments, and maintenance status.</li>
+                    <li><strong>Guest information management:</strong> Maintains a database of guest details and preferences.</li>
+                    <li><strong>Integration with payment gateways:</strong> Allows for secure online transactions.</li>
+                    <li><strong>Reporting and analytics:</strong> Provides reports on occupancy rates, revenue, and performance metrics.</li>
+                </ul>
+                <h5>Technologies Used:</h5>
+                <ul>
+                    <li><strong>HTML, CSS, and JavaScript:</strong> Core technologies for building the user interface and adding interactivity.</li>
+                    <li><strong>Bootstrap:</strong> Framework for responsive and modern design.</li>
+                    <li><strong>Backend integration:</strong> (e.g.PHP) for server-side logic and database interactions.</li>
+                    <li><strong>MySQL database:</strong> For storing and retrieving data related to guests, reservations, and rooms.</li>
+                </ul>
+                <h5>Significance:</h5>
+                <p>The Hotel Management System improves the efficiency and user experience of hotel operations by providing a user-friendly and responsive web interface for managing reservations, room availability, and guest information. It enhances operational efficiency and guest satisfaction by ensuring accurate and timely management of hotel resources.</p>
+            </div>
+            <p class="card-text">Efficiently manage reservations, streamline operations, and enhance guest satisfaction with our Hotel Management System.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
