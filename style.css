@@ -1,0 +1,212 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------- NAVBAR ---------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 65px;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+nav h2 {
+  font-size: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: rgb(13, 255, 0);
+}
+nav .center a img {
+  width: 60px;
+}
+
+/* ---------------- HERO ---------------- */
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* makes it stack on small screens */
+  margin: 60px 0;
+  padding: 0 20px;
+  text-align: center; /* center text when stacked */
+}
+
+.firstSection > div {
+  width: 45%;
+}
+
+.leftSection {
+  font-size: 2rem;
+  margin: 30px 0;
+  color: black;
+}
+.black {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+#element {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.leftSection .btn {
+  padding: 12px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid rgb(0, 0, 0) 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.leftSection .btn:hover {
+  border-color: rgb(4, 255, 0);
+}
+
+.rightSection .pic {
+  border-radius: 30px;
+  max-width: 100%; /* responsive image */
+  height: auto;
+}
+
+/* ---------------- WORK EXPERIENCE ---------------- */
+.secondSection {
+  max-width: 90vw;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.secondSection h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text-gray {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: block;
+}
+
+.secondSection .box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* stack items on small screens */
+  gap: 40px;
+}
+
+.secondSection .vertical {
+  flex: 1 1 200px; /* responsive blocks */
+  text-align: center;
+  padding: 10px;
+  max-width: 250px;
+}
+
+.image-top {
+  width: 50px;
+  margin-bottom: 15px;
+  position: static; /* remove weird absolute positions */
+}
+h1 {
+  color: black;
+}
+
+.vertical-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.vertical-des {
+  font-size: 12px;
+  color: #000000;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* make it responsive */
+  text-align: center;
+  gap: 20px;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+footer ul li {
+  display: inline; /* makes links appear side by side */
+  margin-right: 15px;
+}
+
+/* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .firstSection > div {
+    width: 100%; /* full width on mobile */
+  }
+
+  .leftSection {
+    font-size: 1.5rem;
+  }
+
+  .secondSection .box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h2 {
+    font-size: 1rem;
+  }
+
+  .leftSection {
+    font-size: 1.2rem;
+  }
+
+  .leftSection .btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .vertical-title {
+    font-size: 16px;
+  }
+
+  .vertical-des {
+    font-size: 11px;
+  }
+}
