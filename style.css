@@ -76,10 +76,12 @@ nav .center a img {
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+  transition: all 0.3s ease-in-out;
 }
 
 .leftSection .btn:hover {
   border-color: rgb(4, 255, 0);
+  transform: scale(1.05);
 }
 
 .rightSection .pic {
@@ -139,6 +141,108 @@ h1 {
 .vertical-des {
   font-size: 12px;
   color: #000000;
+}
+
+/* ---------------- WORDPRESS SITES SECTION ---------------- */
+.wordpressSection {
+  max-width: 90vw;
+  margin: 50px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.wordpressSection h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.wordpress-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* 👈 adds space between logos */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.wordpress-logos img {
+  max-width: 120px;
+  filter: grayscale(100%) brightness(70%); /* dull effect */
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.wordpress-logos img:hover {
+  filter: grayscale(0%) brightness(100%); /* original color */
+  transform: scale(1.1);
+}
+
+/* ---------------- PROJECTS SECTION ---------------- */
+.projectsSection {
+  max-width: 90vw;
+  margin: 50px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.projectsSection h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.projects-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project {
+  background: #000000;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+}
+
+.project img {
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.project a {
+  text-decoration: none;
+  color: rgb(0, 255, 42);
+}
+.view-more a.btn {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 8px 18px;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.view-more:hover a.btn {
+  border-color: rgb(4, 255, 0);
+  transform: scale(1.05);
 }
 
 /* ---------------- FOOTER ---------------- */
