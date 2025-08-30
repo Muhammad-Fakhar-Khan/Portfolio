@@ -243,6 +243,15 @@ h1 {
   transform: scale(1.05);
 }
 
+/* ---------------- CERTIFICATE SECTION ---------------- */
+
+.certificatesSection {
+  max-width: 90vw;
+  margin: 50px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
 .certificatesSection h1 {
   text-align: center;
   font-size: 2rem;
@@ -269,9 +278,6 @@ h1 {
 .certificates-grid img:hover {
   transform: scale(1.05);
 }
-
-
-
 
 /* ---------------- FOOTER ---------------- */
 footer {
