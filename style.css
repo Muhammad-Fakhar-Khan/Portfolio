@@ -279,6 +279,56 @@ h1 {
   transform: scale(1.05);
 }
 
+/* Horizontal Timeline */
+.timeline-horizontal {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  margin: 50px auto;
+  max-width: 90vw;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.workExperienceSection h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.timeline-content h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #000000;
+  text-align: left;
+}
+
+.timeline-content p,
+.timeline-content li {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.5;
+  text-align: left;
+}
+
 /* ---------------- FOOTER ---------------- */
 footer {
   background-color: rgb(255, 255, 255);
@@ -368,6 +418,15 @@ footer ul li {
   color: #333;
 }
 
+section {
+  background: #f8f9fa;  /* light gray background */
+  border-radius: 15px;  /* rounded edges */
+  padding: 60px 30px;   /* consistent spacing */
+  margin: 50px auto;    /* equal gap between sections */
+  max-width: 90vw;      /* keep it aligned with your layout */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* subtle shadow */
+}
+
 
 /* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
 @media (max-width: 768px) {
@@ -411,5 +470,15 @@ footer ul li {
 
   .vertical-des {
     font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .timeline-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-horizontal::before {
+    content: none; /* remove horizontal line */
   }
 }
