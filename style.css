@@ -418,14 +418,25 @@ footer ul li {
   color: #333;
 }
 
+/* Global style for all sections */
 section {
   background: #f8f9fa;  /* light gray background */
   border-radius: 15px;  /* rounded edges */
-  padding: 60px 30px;   /* consistent spacing */
-  margin: 50px auto;    /* equal gap between sections */
-  max-width: 90vw;      /* keep it aligned with your layout */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* subtle shadow */
+  padding: 60px 30px;
+  margin: 50px auto;
+  max-width: 90vw;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
+/* Remove background from the first section (hero) */
+section:first-of-type {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;  /* optional: keeps hero full-width clean */
+  margin: 0;
+}
+
 
 
 /* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
