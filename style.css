@@ -368,17 +368,6 @@ footer ul li {
   color: #333;
 }
 
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* keep it behind everything */
-}
-
-
-
 
 /* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
 @media (max-width: 768px) {
